@@ -44,7 +44,7 @@ const HomeDiv = styled.div`
 `
 export const ContentHome = styled.div`
     width: 50%;
-    height: 81.2vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,16 +52,17 @@ export const ContentHome = styled.div`
     flex-direction: column;
     p {
         color: white;
-        font-size: 35px;
+        font-size: 30px;
     }
     b {
         color: #522cef;
     }
     h3 {
         color: white;
-        font-size: 68px;
+        font-size: 65px;
         display: block;
         font-weight: bold;
+        text-align: center;
     }
         button {
             margin-top: 15px;
@@ -107,7 +108,7 @@ export const ContentHome = styled.div`
 `
 const ContentHome2 = styled.div`
     width: 50%;
-    height: 81.2vh;
+    height: 80vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -131,11 +132,12 @@ const ContentHome2 = styled.div`
 `
 const RedHome = styled.div`
     width: 100%;
+    height: 10vh;
     text-align: center;
     i {
         color: white;
         padding: 20px;
-        font-size: 42px;
+        font-size: 35px;
     }
     @media(max-width:768px) {
         i {

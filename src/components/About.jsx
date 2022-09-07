@@ -47,10 +47,10 @@ const ContentAbout = styled.section`
         }
         .photo-cv {
             width: 100%;
-            height: 40vh;
+            height: 30vh;
             .photo-me {
-                width: 180px;
-                height: 180px;
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
                 border: 5px solid white;
                 margin: auto;
@@ -75,9 +75,9 @@ const ContentAbout = styled.section`
         }
         .description {
             text-align: center;
+            height: 70vh;
             p {
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 23px;
                 color:white;
                 span{ 
                     color: #522cef;
@@ -100,42 +100,42 @@ const ContentAbout = styled.section`
         .container-about {
 
             h2 {
-                font-size: 60px;
+                font-size: 55px;
                 height: 10vh;
             }
           .photo-cv{
             width: 50%;
-            height: 90vh;
+            height: 88vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
              .photo-me {
                 margin: 20px;
-                width: 380px;
-                height: 380px;
+                width: 360px;
+                height: 360px;
             }
             button {
-                width: 250px;
-                height: 60px;
+                width: 220px;
+                height: 50px;
                 font-size: 23px;
             }
         }
           .description {
             width: 50%;
-            height: 90vh;
+            height: 88vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
 
             p {
-                font-size: 33px;
+                font-size: 28px;
             }
 
             button {
-                width: 250px;
-                height: 60px;
+                width: 220px;
+                height: 50px;
                 font-size: 23px;
             }
         }

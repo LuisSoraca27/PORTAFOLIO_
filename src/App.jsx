@@ -6,6 +6,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
 import About from './components/About';
+import MySkills from './components/MySkills';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
      <NavBar/>
      <Home/>
      <About/>
+     <MySkills/>
     </div>
     
   )

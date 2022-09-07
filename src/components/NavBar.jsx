@@ -39,10 +39,10 @@ const NavContainer = styled.nav`
     margin: auto;
     h2 {
     color: white;
-    font-weight: 900;
     font-size: 40px;
+    font-weight: 700;
     span {
-        font-weight: 900;
+        font-weight: 700;
         color: #522cef;
     }
 }
