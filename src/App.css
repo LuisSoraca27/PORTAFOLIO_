@@ -5,3 +5,9 @@
 .prueba h1 {
     margin: auto;
 }
+
+.content {
+    padding-top: 30px;
+    height: 75vh;
+    overflow-y: auto;
+}

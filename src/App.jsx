@@ -7,6 +7,7 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react';
 import About from './components/About';
 import MySkills from './components/MySkills';
+import Myprojects from './components/Myprojects';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
      <Home/>
      <About/>
      <MySkills/>
+     <Myprojects/>
     </div>
     
   )

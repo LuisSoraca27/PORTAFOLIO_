@@ -7,44 +7,44 @@ import reactIcon from "../img/reactIcon.svg";
 import nodejsIcon from "../img/nodejsIcon.svg";
 import expressIcon from "../img/expressIcon.svg";
 import posgresIcon from "../img/posgresIcon.svg";
-import gitIcon from "../img/gitIcon.svg";
+import redux from "../img/reduxIcon.svg";
 
 const MySkills = () => {
   return (
-    <ContentSkills>
-      <h2>My skills</h2>
-      <Content>
+    <ContentSkills >
+      <h2 data-aos="fade-down">My skills</h2>
+      <Content data-aos="fade-down">
         <Skills>
           <img src={htmlIcon} alt="html" />
           <b>HTML</b>
         </Skills>
         <Skills>
-            <img src={cssIcon} alt="html" />
-        <b>CSS</b>
-        </Skills> 
+          <img src={cssIcon} alt="html" />
+          <b>CSS</b>
+        </Skills>
         <Skills>
-         <img src={javascriptIcon} alt="html" />
+          <img src={javascriptIcon} alt="html" />
           <b>JavaScript</b>
         </Skills>
         <Skills>
- <img src={reactIcon} alt="html" />
-        <b>React Js</b>
+          <img src={reactIcon} alt="html" />
+          <b>React Js</b>
         </Skills>
         <Skills>
- <img src={nodejsIcon} alt="html" />
+          <img src={redux} alt="html" />
+          <b>Redux</b>
+        </Skills>
+        <Skills>
+          <img src={nodejsIcon} alt="html" />
           <b>Node Js</b>
         </Skills>
         <Skills>
-        <img src={expressIcon} alt="html" />
-            <b>Express</b>
+          <img src={expressIcon} alt="html" />
+          <b>Express Js</b>
         </Skills>
         <Skills>
-        <img src={posgresIcon} alt="html" />
-            <b>PosgreSQL</b>
-        </Skills>
-        <Skills>
-        <img src={gitIcon} alt="html" />
-            <b>Git</b>
+          <img src={posgresIcon} alt="html" />
+          <b>PosgreSQL</b>
         </Skills>
       </Content>
     </ContentSkills>
@@ -65,7 +65,7 @@ const ContentSkills = styled.section`
     font-size: 55px;
   }
 `;
-const Content = styled.article`
+export const Content = styled.article`
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -88,5 +88,9 @@ const Skills = styled.div`
   }
   b {
     font-size: 22px;
+  }
+  @media (min-width: 768px) {
+    width: 240px;
+    height: 240px;
   }
 `;
