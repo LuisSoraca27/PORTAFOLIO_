@@ -3,3 +3,13 @@
   font-family: 'Readex Pro', sans-serif;
   box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #05021c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #522cef;
+  border-radius: 7px;
+}

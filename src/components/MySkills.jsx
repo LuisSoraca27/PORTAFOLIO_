@@ -57,6 +57,7 @@ const ContentSkills = styled.section`
   width: 100%;
   height: 100vh;
   background-color: #05021c;
+  overflow-y: auto;
 
   h2 {
     color: white;
