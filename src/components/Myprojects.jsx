@@ -9,6 +9,7 @@ import pokemon from "../video/pokemon.mp4";
 import rickAndMorty from "../video/rickandmorty.mp4";
 import ecommerce from "../video/commerce.mp4";
 import FrontProject from "./FrontProject";
+import BackProject from "./BackProject";
 
 const Myprojects = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -63,21 +64,25 @@ const Myprojects = () => {
 
             <FrontProject
               videoProject={ecommerce}
-             nameProject={"Ecommerce v2"}
+              nameProject={"Ecommerce v2"}
               demo={"https://rainbow-eclair-371018.netlify.app/"}
               code={"https://scintillating-heliotrope-2aa901.netlify.app/"}
             />
-            
+
             <FrontProject
               videoProject={clima}
-             nameProject={"Weather App"}
+              nameProject={"Weather App"}
               demo={"https://shimmering-unicorn-d0a406.netlify.app/"}
               code={"https://github.com/LuisSoraca27/Second-entregable"}
-            /> 
-
+            />
           </>
         ) : (
-          <ProjectBack></ProjectBack>
+        <>
+          <BackProject />
+          <BackProject />
+          <BackProject />
+          <BackProject />
+        </>
         )}
       </Content>
     </ContentProjects>
@@ -123,5 +128,3 @@ const ContentProjects = styled.section`
     }
   }
 `;
-
-const ProjectBack = styled.div``;
