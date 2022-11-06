@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import About from './components/About';
 import MySkills from './components/MySkills';
 import Myprojects from './components/Myprojects';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
      <About/>
      <MySkills/>
      <Myprojects/>
+     <Contact/>
     </div>
     
   )

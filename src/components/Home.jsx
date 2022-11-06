@@ -21,9 +21,26 @@ const Home = () => {
             </div>
           </ContentHome2>
           <RedHome>
-            <i className="fa-brands fa-github"></i>
-            <i className="fa-brands fa-linkedin-in"></i>
-            <i className="fa-brands fa-instagram"></i>
+            <a
+              href="https://github.com/LuisSoraca27"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luis-enrique-sorac%C3%A1-benthan-09a999241/"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/luis_soraca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
           </RedHome>
         </div>
       </HomeDiv>
@@ -76,7 +93,7 @@ export const ContentHome = styled.div`
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
-    
+
     background-color: #5500ff;
     color: white;
     cursor: pointer;

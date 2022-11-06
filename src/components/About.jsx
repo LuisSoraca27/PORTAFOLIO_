@@ -21,7 +21,7 @@ const About = () => {
             my way and enter the IT Sector, contribute the knowledge that I
             acquired, I am ready for any challenge that Present.
           </p>
-          <button>My skills</button>
+          <a href="#mySkillss"><button className="mySkills" >My skills</button></a>
         </article>
       </div>
     </ContentAbout>
@@ -90,9 +90,10 @@ const ContentAbout = styled.section`
           display: block;
         }
       }
-      button {
-        width: 150px;
-        height: 40px;
+
+      .mySkills {
+        width: 170px;
+        height: 45px;
         background-color: #5500ff;
         color: white;
         font-weight: 700;
@@ -103,6 +104,8 @@ const ContentAbout = styled.section`
           background-color: #55557f;
         }
       }
+
+      
     }
   }
   @media (min-width: 768px) {

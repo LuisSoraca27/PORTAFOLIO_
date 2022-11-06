@@ -11,7 +11,7 @@ import redux from "../img/reduxIcon.svg";
 
 const MySkills = () => {
   return (
-    <ContentSkills >
+    <ContentSkills id="mySkillss">
       <h2 data-aos="fade-down">My skills</h2>
       <Content data-aos="fade-down">
         <Skills>

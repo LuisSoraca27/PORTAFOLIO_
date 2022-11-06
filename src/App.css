@@ -12,6 +12,14 @@
     overflow-y: auto;
 }
 
+
 .content::-webkit-scrollbar {
     width: 7px;
+}
+
+@media (max-width: 768px) {
+    .content-contact {
+        flex-direction: column;
+    }
+   
 }

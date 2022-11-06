@@ -14,7 +14,7 @@ const FrontProject = ({ videoProject, nameProject, demo, code }) => {
           <h4>{nameProject}</h4>
           <a href={demo} target="_blank">
             <button className="button-project">
-              <i class="fa-solid fa-globe"></i>
+              <i className="fa-solid fa-globe"></i>
               <br />
               Demo
             </button>
