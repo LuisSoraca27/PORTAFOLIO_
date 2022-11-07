@@ -90,7 +90,7 @@ export default Contact;
 
 const ContentContact = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-color: #05021c;
 
   h2 {

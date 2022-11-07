@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import photoMe from "../img/photo-me.webp";
+import cv from '../../public/Luis Soracá FS.pdf'
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           <div className="photo-me">
             <img src={photoMe} alt="Luis Soracá" />
           </div>
-          <button>Download CV</button>
+          <button><a download={cv} href="../">Download CV</a></button>
         </article>
         <article className="description">
           <p>
@@ -76,6 +77,10 @@ const ContentAbout = styled.section`
         margin: 10px;
         &:hover {
           background-color: #55557f;
+        }
+        a {
+          text-decoration: none;
+          color: white;
         }
       }
     }
