@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import iconApi from "../img/icon-api.webp";
 
-const BackProject = () => {
+const BackProject = ({name, github, description}) => {
     return (
         <ProjectBack>
         <figure>
@@ -10,7 +10,7 @@ const BackProject = () => {
         </figure>
         <div className="container-button">
           <a
-            href="https://github.com/LuisSoraca27/tester-server"
+            href={github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,13 +21,10 @@ const BackProject = () => {
             </button>
           </a>
         </div>
-        <h4>Savefood</h4>
+        <h4>{name}</h4>
         <div className="container-description">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            unde, rerum nam minus corporis neque obcaecati ipsum modi
-            quisquam rem earum odit ipsam nobis. Earum ipsum unde eos eius
-            dolores?
+           {description}
           </p>
         </div>
       </ProjectBack>

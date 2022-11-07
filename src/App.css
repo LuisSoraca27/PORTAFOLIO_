@@ -23,3 +23,18 @@
     }
    
 }
+
+.navbarMenu {
+    height: 100%;
+    width: 370px;
+    background-color:  #5500ff;
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+.notActive  {
+    right: -400px; 
+}

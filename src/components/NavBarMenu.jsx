@@ -1,55 +1,59 @@
 import React, { useState } from "react";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import "../App.css";
 
-const NavBarMenu = ({ show, handleClose }) => {
+const NavBarMenu = ({ active, changeActive }) => {
   return (
     <>
-      <Offcanvas
-        show={show}
-        onHide={handleClose}
-        placement={"end"}
-        style={{ background: "#5500ff" }}
-      >
-        <Offcanvas.Header closeButton></Offcanvas.Header>
-        <NavbarMenu>
-          <a href="">
-            <button>HOME</button>
+      <NavMenu className={`navbarMenu ${active && "notActive"}`}>
+        <button onClick={changeActive}><i className="fa-solid fa-xmark"></i></button>
+        <div>
+          <a href="#home" onClick={changeActive}>
+            HOME
           </a>
-          <a href="">
-            <button>ABOUT ME</button>
+          <a href="#about" onClick={changeActive}>
+            ABOUT
           </a>
-          <button onClick={handleClose}>
-          
-           
-          </button>
-          <a href="">
-            <button>MY PROJECTS</button>
+          <a href="#mySkillss" onClick={changeActive}>
+            MY SKILLS
           </a>
-          <a href="">
-            <button>CONTACT</button>
+          <a href="#projects" onClick={changeActive}>
+            MY PROJECTS
           </a>
-        </NavbarMenu>
-      </Offcanvas>
+          <a href="#contact" onClick={changeActive}>
+            CONTACT
+          </a>
+        </div>
+      </NavMenu>
     </>
   );
 };
 
 export default NavBarMenu;
 
-const NavbarMenu = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
+const NavMenu = styled.div`
 
-  button {
-    background-color: transparent;
-    margin: 30px 0;
-    font-size: 30px;
-    color: white;
-    border: 2px solid white;
+ button {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  padding-left: 1rem;
+  color: white;
+ }
+  div {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      margin: 20px 0;
+      text-decoration: none;
+      color: white;
+      padding: 10px 30px;
+      border: 2px solid white;
+      font-size: 1.6rem;
+    }
   }
 `;

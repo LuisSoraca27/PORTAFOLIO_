@@ -1,10 +1,15 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
-const Home = () => {
+const Home = ({ changeActive }) => {
   return (
     <>
-      <HomeDiv>
+      <HomeDiv id="home">
+        <NavContainer data-aos="fade-down">
+          <h2>
+            Luis<span>Soracá</span>.Dev
+          </h2>
+        </NavContainer>
         <div className="HomeDivDiv">
           <ContentHome data-aos="fade-right">
             <p>
@@ -194,6 +199,35 @@ const RedHome = styled.div`
   @media (max-width: 768px) {
     i {
       font-size: 30px;
+    }
+  }
+`;
+
+const NavContainer = styled.nav`
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  background-color: #05021c;
+  height: 8vh;
+
+  h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    span {
+      font-weight: 700;
+      color: #522cef;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 25px;
+      padding-top: 0.3rem;
     }
   }
 `;

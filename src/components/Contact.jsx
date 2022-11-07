@@ -4,7 +4,7 @@ import { Content } from "./MySkills";
 
 const Contact = () => {
   return (
-    <ContentContact>
+    <ContentContact id="contact" >
       <h2>Contact</h2>
       <h3>If you like what I do, don't doubt in contacting me</h3>
       <Content className="content-contact">

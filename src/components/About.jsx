@@ -4,7 +4,7 @@ import photoMe from "../img/photo-me.webp";
 
 const About = () => {
   return (
-    <ContentAbout id="About">
+    <ContentAbout id="about">
       <div className="container-about" data-aos="fade-right">
         <h2>About Me</h2>
         <article className="photo-cv">
