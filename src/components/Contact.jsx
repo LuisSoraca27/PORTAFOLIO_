@@ -5,11 +5,11 @@ import { Content } from "./MySkills";
 const Contact = () => {
   return (
     <ContentContact id="contact" >
-      <h2>Contact</h2>
-      <h3>If you like what I do, don't doubt in contacting me</h3>
+      <h2>Contacto</h2>
+      <h3>Si  crees que podemos trabajar juntos no dudes en contactarme</h3>
       <Content className="content-contact">
         <article className="form-contact">
-          <h3>Send me an e-mail &#128526; </h3>
+          <h3>Envíame un correo electrónico &#128526; </h3>
           <Form action="https://formsubmit.co/luisenriquesoraca27@gmail.com" method="POST">
             <label htmlFor="fullName">Full name</label>
             <input
@@ -20,7 +20,7 @@ const Contact = () => {
               required
             />
             <label htmlFor="email">Email</label>
-            <input type="text" id="email_" name="email" placeholder="Email" required/>
+            <input type="text" id="email_" name="email" placeholder="Email" required />
             <label htmlFor="affair">Affair</label>
             <input
               type="text"
@@ -47,7 +47,7 @@ const Contact = () => {
         </article>
 
         <article className="social-contact">
-          <h3>You can know me more in &#128525;</h3>
+          <h3>Puedes conocerme más en: &#128525;</h3>
           <div className="button-contact">
             <a
               href="https://www.linkedin.com/in/luis-enrique-sorac%C3%A1-benthan-09a999241/"

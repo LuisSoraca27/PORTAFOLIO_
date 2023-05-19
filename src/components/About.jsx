@@ -1,28 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import photoMe from "../img/photo-me.webp";
-import cv from '../../public/Luis Soracá FS.pdf'
+import cvls from '../../public/Luis FS CV.pdf';
 
 const About = () => {
+
+  const downloadFile = () => {
+    const link = document.createElement('a');
+    link.href = cvls;
+    link.setAttribute('download', 'Luis Soraca CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
   return (
     <ContentAbout id="about">
       <div className="container-about" data-aos="fade-right">
-        <h2>About Me</h2>
+        <h2>Sobre mí</h2>
         <article className="photo-cv">
           <div className="photo-me">
             <img src={photoMe} alt="Luis Soracá" />
           </div>
-          <button><a download={cv} href="../">Download CV</a></button>
+          <button onClick={downloadFile} ><a>Resumen</a></button>
         </article>
         <article className="description">
           <p>
-            <span> programmer and lover of good habits.</span> In 2022 I will
-            start my journey of several months where I have been able to learn
-            many technologies. Today I want to be part of this great bond, find
-            my way and enter the IT Sector, contribute the knowledge that I
-            acquired, I am ready for any challenge that Present.
+            <span> programador y amante de los buenos habitos.</span> Egresado en Desarrollo de Software con enfoque en JavaScript. Con habilidades en el desarrollo Full-Stack y experiencia en proyectos prácticos utilizando JavaScript. Buscando oportunidades para aplicar mis habilidades y contribuir al crecimiento de una empresa.
           </p>
-          <a href="#mySkillss"><button className="mySkills" >My skills</button></a>
+          <a href="#mySkillss"><button className="mySkills" >Mis Habilidades</button></a>
         </article>
       </div>
     </ContentAbout>
@@ -97,7 +104,7 @@ const ContentAbout = styled.section`
       }
 
       .mySkills {
-        width: 170px;
+        width: 200px;
         height: 45px;
         background-color: #5500ff;
         color: white;

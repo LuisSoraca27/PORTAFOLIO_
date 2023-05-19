@@ -9,19 +9,19 @@ const NavBarMenu = ({ active, changeActive }) => {
         <button onClick={changeActive}><i className="fa-solid fa-xmark"></i></button>
         <div>
           <a href="#home" onClick={changeActive}>
-            HOME
+            INICIO
           </a>
           <a href="#about" onClick={changeActive}>
-            ABOUT
+            SOBRE MI
           </a>
           <a href="#mySkillss" onClick={changeActive}>
-            MY SKILLS
+            MIS HABILIDADES
           </a>
           <a href="#projects" onClick={changeActive}>
-            MY PROJECTS
+            MIS PROYECTOS
           </a>
           <a href="#contact" onClick={changeActive}>
-            CONTACT
+            CONTACTO
           </a>
         </div>
       </NavMenu>

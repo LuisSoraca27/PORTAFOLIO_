@@ -13,11 +13,11 @@ const Home = ({ changeActive }) => {
         <div className="HomeDivDiv">
           <ContentHome data-aos="fade-right">
             <p>
-              Hi my name is <b>Luis Soracá</b>.{" "}
+              Hola mi nombre es <b>Luis Soracá</b>.{" "}
             </p>
             <h3>Full-stack developer</h3>
             <a href="#About">
-              <button>About Me</button>
+              <button>Sobre mí</button>
             </a>
           </ContentHome>
           <ContentHome2 data-aos="fade-left">

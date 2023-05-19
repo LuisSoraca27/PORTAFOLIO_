@@ -16,7 +16,7 @@ const Myprojects = () => {
 
   return (
     <ContentProjects id="projects">
-      <h2>My projects</h2>
+      <h2>Mis proyectos</h2>
       <div className="selectProjects">
         <button
           className={`selectProjects__button ${isVisible ? "isVisible" : ""}`}
@@ -86,9 +86,9 @@ const Myprojects = () => {
               }
             />
             <BackProject name={'Ecommerce server'} github={'https://github.com/LuisSoraca27/Academlo-store'}
-             description={'An ecommerce server capable of managing buyer and seller users, adding products for sale and managing the purchase.'}/>
-            <BackProject name={'Game store'} github={'https://github.com/LuisSoraca27/Games-store'} description={'Game store, in it he wants to be able to register the different video game consoles that he has available in his store, as well as to register several video games, and as you can guess, these games can be multiplatform.'}/>
-            <BackProject name={'Academlo meals'} github={'https://github.com/LuisSoraca27/Academlo-Meals'} description={'Restaurant management app, with user management, creation of restaurants and their products, users can place orders and see all their orders in the history.'}/>
+              description={'An ecommerce server capable of managing buyer and seller users, adding products for sale and managing the purchase.'} />
+            <BackProject name={'Game store'} github={'https://github.com/LuisSoraca27/Games-store'} description={'Game store, in it he wants to be able to register the different video game consoles that he has available in his store, as well as to register several video games, and as you can guess, these games can be multiplatform.'} />
+            <BackProject name={'Academlo meals'} github={'https://github.com/LuisSoraca27/Academlo-Meals'} description={'Restaurant management app, with user management, creation of restaurants and their products, users can place orders and see all their orders in the history.'} />
           </>
         )}
       </Content>
